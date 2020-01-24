@@ -1,0 +1,109 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+footer {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+footer.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.call-to-action {
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.call-to-action .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+.card {
+    -webkit-box-shadow: 3px 5px 43px -10px rgba(0,0,0,0.81);
+    -moz-box-shadow: 3px 5px 43px -10px rgba(0,0,0,0.81);
+    box-shadow: 3px 5px 43px -10px rgba(0,0,0,0.81);
+}
+.zoom
+{
+    transition: transform .2s;
+}
+.zoom:hover {
+    transform: scale(1.02); 
+}
+.shadow {
+    -webkit-box-shadow: 3px 5px 43px -10px rgba(0,0,0,0.81);
+    -moz-box-shadow: 3px 5px 43px -10px rgba(0,0,0,0.81);
+    box-shadow: 3px 5px 43px -10px rgba(0,0,0,0.81);
+}
+.container-fluid {
+    width: 100%;
+    min-height: 500px;
+}
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+header .container {
+    position: relative;
+    z-index: 2;
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('videos/commerical.mp4') black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+}
+.button-ad {
+    background-color: black;
+}
+.button-ad:hover {
+    background-color: red;
+}
+@media screen and (max-width: 1000px) {
+    .ad {
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .map {
+        display: none;
+    }
+}
